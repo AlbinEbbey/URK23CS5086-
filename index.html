@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Rental System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vehicle Rental System</h1>
+
+    <!-- Vehicle List -->
+    <h2>Available Vehicles</h2>
+    <ul id="vehicle-list"></ul>
+
+    <!-- Add New Vehicle Form -->
+    <h3>Add New Vehicle</h3>
+    <form id="add-vehicle-form">
+      <input type="text" id="vehicle-name" placeholder="Vehicle Name" required>
+      <input type="text" id="vehicle-type" placeholder="Vehicle Type" required>
+      <input type="number" id="vehicle-price" placeholder="Price per Day" required>
+      <button type="submit">Add Vehicle</button>
+    </form>
+
+    <!-- Delete Vehicle Form -->
+    <h3>Delete Vehicle</h3>
+    <form id="delete-vehicle-form">
+      <input type="number" id="delete-vehicle-id" placeholder="Vehicle ID to delete" required>
+      <button type="submit">Delete Vehicle</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
